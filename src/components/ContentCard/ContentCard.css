@@ -1,0 +1,5 @@
+.content-card img{
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+}

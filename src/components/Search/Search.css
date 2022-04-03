@@ -1,0 +1,14 @@
+.search-input {
+    background-color: transparent !important;
+    border: 0;
+    box-shadow: none !important;
+    color: #fff !important;
+}
+.search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
