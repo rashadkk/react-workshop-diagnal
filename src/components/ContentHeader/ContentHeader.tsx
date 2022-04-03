@@ -4,6 +4,8 @@ import { useAppSelector, useAppDispatch  } from '../../store/hooks';
 
 import './ContentHeader.css';
 
+const baseUrl = `${process.env.PUBLIC_URL}/Slices/`;
+
 function ContentHeader() {
     const contentTitle = useAppSelector(state => state.contents.contentTitle)
     const keyword = useAppSelector(state => state.contents.searchKeyword);
@@ -12,7 +14,7 @@ function ContentHeader() {
     return (
         <div className="content-header d-flex justify-content-between px-3 py-4">
             <div className="d-flex align-items-center">
-                <img className="" src="/Slices/Back.png" alt="search" width={20} />
+                <img className="" src={`${baseUrl}Back.png`} alt="search" width={20} />
                 <h1 className="h6 ms-3 mb-0">{contentTitle}</h1>
             </div>
             <Search

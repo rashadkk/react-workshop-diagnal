@@ -6,7 +6,7 @@ interface Props {
     defaultImg?: string,
 }
 
-const baseUrl = '/Slices/';
+const baseUrl = `${process.env.PUBLIC_URL}/Slices/`;
 
 function LazyImg({ src, defaultImg }: Props) {
 

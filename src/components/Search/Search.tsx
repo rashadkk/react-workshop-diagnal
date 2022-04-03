@@ -7,6 +7,8 @@ interface SearchProps {
     placehodler?: string
 }
 
+const baseUrl = `${process.env.PUBLIC_URL}/Slices/`;
+
 function Search({ value, placehodler, onChange }: SearchProps) {
     const [focus, setFocus] = useState(false)
     const inputRef = useRef<any>();
@@ -41,7 +43,7 @@ function Search({ value, placehodler, onChange }: SearchProps) {
                     width: focus ? '100%': 0
                 }}
             />
-            <img className="search-icon" src="/Slices/search.png" alt="search" width={25} onClick={makeInputVisble} />
+            <img className="search-icon" src={`${baseUrl}search.png`} alt="search" width={25} onClick={makeInputVisble} />
         </div>
     )
 }
